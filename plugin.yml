@@ -1,0 +1,7 @@
+name: RemoteResourcePack
+author: alvin0319
+main: alvin0319\RemoteResourcePack\Loader
+version: 1.0.0
+api: 5.0.0
+
+src-namespace-prefix: alvin0319\RemoteResourcePack
