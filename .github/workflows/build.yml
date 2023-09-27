@@ -49,10 +49,12 @@ jobs:
             composer-v2-cache-
       - name: Install Composer dependencies
         run: php composer.phar install --prefer-dist --no-interaction
-      - name: Build Phar
-        uses: SOF3/pharynx@v0.2
-        id: pharynx
-      - uses: actions/upload-artifact@v3
+      - name: Download latest DevTools
+        run: wget https://poggit.pmmp.io/r/220133/PocketMine-DevTools.phar -O DevTools.phar
+      - name: Build plugin
+        run: php -dphar.readonly=0 DevTools.phar --make . --out RemoteResourcePack.phar
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
         with:
           name: RemoteResourcePack.phar
-          path: ${{ steps.pharynx.outputs.output-phar }}
+          path: RemoteResourcePack.phar
