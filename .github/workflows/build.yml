@@ -28,7 +28,7 @@ jobs:
         image: [ ubuntu-20.04 ]
         php: [ 8.2 ]
     steps:
-      - uses: @actions/checkout
+      - uses: actions/checkout@v3
       - name: Setup PHP
         uses: pmmp/setup-php-action@d2510ba2c63846f7aac4ed6e8b6b2346400c9ef0
         with:
