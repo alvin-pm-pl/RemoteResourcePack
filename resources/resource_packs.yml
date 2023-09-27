@@ -1,6 +1,0 @@
-# Packs to download from the remote server
-# Example:
-# resource_packs:
-#   pack_file_name: https://example.com/pack.zip
-# The resource pack should be loaded by PM server in order to work.
-resource_packs: [ ]

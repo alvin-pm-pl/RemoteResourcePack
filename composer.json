@@ -1,0 +1,15 @@
+{
+    "name": "alvin0319/remote-resource-pack",
+    "type": "project",
+    "require": {
+        "amphp/http-server": "^2.0",
+        "amphp/http-server-router": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alvin0319",
+            "email": "alvin7810@naver.com"
+        }
+    ]
+}
