@@ -20,9 +20,10 @@ jobs:
           php-version: ${{ matrix.php }}
           install-path: "./bin"
           pm-version-major: 5
-  pharynx-build:
+  build:
     name: Build plugin with Pharynx
     runs-on: ${{ matrix.image }}
+    needs: build-php
     strategy:
       matrix:
         image: [ ubuntu-20.04 ]
